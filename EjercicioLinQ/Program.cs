@@ -11,5 +11,21 @@ var divisibleEntre7 =
     where (entre % 7) == 0
     select entre;
 
-foreach(int i in divisibleEntre7)
+foreach (int i in divisibleEntre7)
+    Console.WriteLine(i);
+
+var esPar = 
+    from par in divisibleEntre7
+    where (par % 2) == 0
+    select par;
+
+foreach(int i in esPar)
+    Console.WriteLine(i);
+
+var esInPar =
+    from inpar in divisibleEntre7
+    where (inpar % 2) != 0
+    select inpar;
+
+foreach(int i in esInPar)
     Console.WriteLine(i);
