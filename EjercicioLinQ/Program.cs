@@ -3,8 +3,8 @@
 List<int> listEnteros = new List<int>();
 
 for (int i = 0; i < 100; i++)
-    if(i%7 ==0)
-    listEnteros.Add(i);
+    if (i % 7 == 0)
+        listEnteros.Add(i);
 
 
 #region Query syntax
@@ -38,7 +38,7 @@ var esParSiete = listEnteros.Where(x => x % 2 == 0);
 var esImparSiete = listEnteros.Where(x => x % 2 != 0);
 
 
-foreach(int i in listEnteros)Console.WriteLine(i);
+foreach (int i in listEnteros) Console.WriteLine(i);
 Console.WriteLine();
 foreach (int i in esParSiete) Console.WriteLine(i);
 Console.WriteLine();
